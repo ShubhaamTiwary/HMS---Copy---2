@@ -1453,7 +1453,7 @@ const Page4 = ({currentPage,previousPage,formData,setFormData}) =>{
     const formErrors = [];
     if (Object.keys(formErrors).length === 0) {
       console.log('Form submitted successfully!');
-      axios.post('http://localhost:7000/student/registration', formData)
+      axios.post('https://hms-hostel-management-done.onrender.com/registration', formData)
       .then((response) => {
         // alert
         console.log('API response:', response.data);
